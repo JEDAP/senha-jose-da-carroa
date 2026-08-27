@@ -1,0 +1,262 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+
+    background: linear-gradient(
+        135deg,
+        #020024,
+        #090979,
+        #00d4ff
+    );
+
+    min-height: 100vh;
+    color: #222;
+}
+
+/* CABEÇALHO */
+
+header {
+    text-align: center;
+    color: white;
+    padding: 40px 20px;
+}
+
+header h1 {
+    font-size: 38px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 18px;
+}
+
+/* CONTEÚDO */
+
+main {
+    width: 90%;
+    max-width: 750px;
+    margin: auto;
+}
+
+/* CARTÕES */
+
+.card {
+    background: white;
+    border-radius: 20px;
+    padding: 30px;
+    margin-bottom: 25px;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.card h2 {
+    text-align: center;
+    color: #090979;
+    margin-bottom: 20px;
+}
+
+.card p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+/* CAMPO DA SENHA */
+
+.campo-senha {
+    display: flex;
+    margin-top: 25px;
+}
+
+.campo-senha input {
+    flex: 1;
+
+    padding: 15px;
+
+    border: 2px solid #ccc;
+    border-radius: 10px 0 0 10px;
+
+    font-size: 17px;
+}
+
+.campo-senha button {
+    width: 55px;
+
+    border: none;
+
+    background: #090979;
+    color: white;
+
+    border-radius: 0 10px 10px 0;
+
+    cursor: pointer;
+}
+
+/* BOTÃO */
+
+.botao {
+    width: 100%;
+
+    padding: 15px;
+
+    margin-top: 15px;
+
+    border: none;
+    border-radius: 10px;
+
+    background: #090979;
+    color: white;
+
+    font-size: 17px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.botao:hover {
+    background: #0066ff;
+    transform: scale(1.02);
+}
+
+/* RESULTADO */
+
+.resultado {
+    margin-top: 30px;
+    padding: 20px;
+
+    background: #f5f7ff;
+
+    border-radius: 15px;
+}
+
+.resultado h3 {
+    margin-bottom: 15px;
+    color: #090979;
+}
+
+/* BARRA DE FORÇA */
+
+.barra {
+    width: 100%;
+    height: 20px;
+
+    background: #ddd;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    margin-bottom: 20px;
+}
+
+#forca {
+    height: 100%;
+    width: 0%;
+
+    transition: 0.5s;
+}
+
+/* CORES DA FORÇA */
+
+.fraca {
+    background: #dc3545;
+}
+
+.media {
+    background: #ffc107;
+}
+
+.forte {
+    background: #28a745;
+}
+
+/* LISTA */
+
+ul {
+    list-style: none;
+    margin-top: 15px;
+}
+
+li {
+    padding: 8px;
+    margin-bottom: 5px;
+
+    background: white;
+
+    border-radius: 8px;
+}
+
+/* DICA */
+
+#dica {
+    margin-top: 20px;
+
+    padding: 15px;
+
+    border-radius: 10px;
+
+    background: #e8f0ff;
+
+    color: #090979;
+
+    font-weight: bold;
+}
+
+/* FÓRMULA */
+
+.formula {
+    text-align: center;
+
+    font-size: 24px;
+    font-weight: bold;
+
+    color: #090979;
+
+    background: #f0f4ff;
+
+    padding: 20px;
+
+    border-radius: 10px;
+
+    margin: 20px 0;
+}
+
+/* ESCONDER */
+
+.escondido {
+    display: none;
+}
+
+/* RODAPÉ */
+
+footer {
+    text-align: center;
+
+    color: white;
+
+    padding: 30px;
+}
+
+/* CELULAR */
+
+@media (max-width: 600px) {
+
+    header h1 {
+        font-size: 28px;
+    }
+
+    .card {
+        padding: 20px;
+    }
+
+    .formula {
+        font-size: 20px;
+    }
+}

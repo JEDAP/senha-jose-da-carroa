@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Missão: Senha Segura</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>🔐 Missão: Senha Segura</h1>
+        <p>Use a matemática para descobrir se sua senha é forte!</p>
+    </header>
+
+    <main>
+
+        <section class="card">
+
+            <h2>🛡️ Teste sua senha</h2>
+
+            <p>
+                Digite uma senha abaixo e veja como ela se comporta
+                matematicamente.
+            </p>
+
+            <div class="campo-senha">
+                <input
+                    type="password"
+                    id="senha"
+                    placeholder="Digite sua senha"
+                >
+
+                <button onclick="mostrarSenha()">👁️</button>
+            </div>
+
+            <button class="botao" onclick="analisarSenha()">
+                🔎 Analisar senha
+            </button>
+
+            <div id="resultado" class="resultado escondido">
+
+                <h3 id="nivel"></h3>
+
+                <div class="barra">
+                    <div id="forca"></div>
+                </div>
+
+                <p id="pontuacao"></p>
+
+                <p id="combinacoes"></p>
+
+                <p id="tempo"></p>
+
+                <h3>📊 Características</h3>
+
+                <ul>
+                    <li id="tamanho"></li>
+                    <li id="maiusculas"></li>
+                    <li id="minusculas"></li>
+                    <li id="numeros"></li>
+                    <li id="simbolos"></li>
+                </ul>
+
+                <div id="dica"></div>
+
+            </div>
+
+        </section>
+
+        <section class="card explicacao">
+
+            <h2>🧮 A matemática por trás</h2>
+
+            <p>
+                Quanto maior for o conjunto de caracteres utilizados
+                e quanto maior for a senha, maior será o número de
+                combinações possíveis.
+            </p>
+
+            <div class="formula">
+                Combinações = C<sup>L</sup>
+            </div>
+
+            <p>
+                <strong>C</strong> representa a quantidade de caracteres
+                disponíveis e <strong>L</strong> representa o tamanho
+                da senha.
+            </p>
+
+            <p>
+                Por exemplo, se utilizarmos 26 letras minúsculas em uma
+                senha de 4 caracteres:
+            </p>
+
+            <div class="formula">
+                26<sup>4</sup> = 456.976
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>🔐 Projeto educativo sobre Segurança Digital</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
